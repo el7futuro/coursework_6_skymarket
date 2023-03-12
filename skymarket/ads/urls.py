@@ -1,6 +1,6 @@
 from django.urls import include, path
 from rest_framework.routers import SimpleRouter
-from skymarket.ads.views import AdViewSet
+from ads.views import AdViewSet
 
 
 ads_router = SimpleRouter()

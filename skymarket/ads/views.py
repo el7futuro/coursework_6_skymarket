@@ -1,13 +1,13 @@
 from functools import partial
 from rest_framework import pagination, viewsets
 from rest_framework.decorators import action
-from skymarket.ads.models import Ad, Comment
-from skymarket.ads.serializers import AdSerializer, AdDetailSerializer, CommentSerializer
+from ads.models import Ad, Comment
+from ads.serializers import AdSerializer, AdDetailSerializer, CommentSerializer
 from rest_framework.views import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
-from skymarket.ads.permissions import UserPermission
-from skymarket.users.models import User
+from ads.permissions import UserPermission
+from users.models import User
 
 
 class AdPagination(pagination.PageNumberPagination):
